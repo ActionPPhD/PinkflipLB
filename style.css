@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+}
+body{
     background: 
         linear-gradient(rgba(253, 235, 240, 0.9), rgba(253, 235, 240, 0.9)), /* white overlay with 50% opacity */
         url('Images/PinkySkate.png');
@@ -11,7 +13,9 @@
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #f99db6;
+    background-color: #f99db6; /* Header stripe color */
+    position: relative; /* Ensure stacking context */
+    z-index: 1; /* Ensure header is above the background */
 }
 h1 {
     margin: 0;
